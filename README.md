@@ -1,6 +1,6 @@
 # MOME Creative Coding Course using p5js (Spring 2015)
 
-A growing collection of examples used to demonstarte basic concepts of creative coding.
+A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web.
 
 The course site can be found at http://stc.mome.hu/blog/index.php?id=vizualis-programnyelvek-1 (hungarian). Most examples are based on problems we have covered during the course. A few examples are ported from processing tutorials and some are modified versions of the excellent js repository at ITP New York: https://github.com/lmccart/itp-creative-js  
 
