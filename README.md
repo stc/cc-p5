@@ -8,18 +8,28 @@ The ios-touch-example folder is an example on how to prepare your sketches to be
 
 #Sources
 [100 Diagrams that save the world](http://www.brainpickings.org/2012/12/21/100-diagrams-that-changed-the-world/)
+
 [A survey to visual programming](http://www.nickerson.to/visprog/CH2/CH2.HTM)
+
 [Visual Programming Languages (A-Z)](http://blog.interfacevision.com/design/design-visual-progarmming-languages-snapshots/)
+
 [Diagrams, Lines and Patterns](http://www.gold.ac.uk/sociology/research-centres/unitofplay/research/diagrams-lines-patterns/)
+
 [Explaining Diagrams](http://vimeo.com/50810215)
+
 [Conditional Design](http://conditionaldesign.org/)
+
 [The Diagram](http://thediagram.com/)
 
 #Tools
 [Sublime Text](http://www.sublimetext.com/)
+
 [P5JS](http://p5js.org/)
+
 [Processing](https://processing.org/)
+
 [Tools at Creative Applications](http://www.creativeapplications.net/tools/)
+
 
 (c) 2015 Agoston Nagy / gpl v3
 
