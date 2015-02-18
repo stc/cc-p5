@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-title" content="Touch Example">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-startup-image" href="startup-image.png">
+  	<script language="javascript" type="text/javascript" src="../p5.js"></script>
+  	<script language="javascript" type="text/javascript" src="sketch.js"></script>
+  	<!-- this line removes any default padding and style. you might only need one of these values set. -->
+  	<style> body {padding: 0; margin: 0;} </style>
+  	<script language="javascript" type="text/javascript">
+  		document.ontouchmove = function(event){
+    		event.preventDefault();
+		}
+	</script>
+</head>
+
+<body>
+</body>
+</html>
