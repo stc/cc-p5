@@ -8,7 +8,7 @@
 // A reference to our box2d world
 var world;
 
-var gravityX = 10;
+var gravityX = 5;
 var gravityY = 5;
 
 // A list we'll use to track fixed objects
@@ -51,6 +51,15 @@ function draw() {
       pops.splice(i,1);
     }
   }
+
+  fill(160,0,0,100);
+  text("gravity",30,20);
+  stroke(160,0,0);
+  line(30,30,30+gravityX*4,30+gravityY*4);
+  noStroke();
+  fill(160,0,0);
+  ellipse(30+gravityX*4,30+gravityY*4,5,5);
+
 }
 
 function mousePressed() {
