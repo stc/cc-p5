@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					78F676201E9F6B1E008E66CB = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C7DABH6UE9;
 						ProvisioningStyle = Automatic;
 					};
 					78F676341E9F6B1E008E66CB = {
@@ -426,7 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C7DABH6UE9;
 				INFOPLIST_FILE = CanvasView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = binaura.CanvasView;
@@ -439,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C7DABH6UE9;
 				INFOPLIST_FILE = CanvasView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = binaura.CanvasView;
