@@ -1,14 +1,17 @@
 var canplay = true;
 var s1, s2, s3, s4, s5, s6;
 
-function setup() {
-  createCanvas(800,600);
+function preload() {
   s1 = new soundObject(100,100,80,1,"C");
   s2 = new soundObject(200,100,80,1.2,"Eb");
   s3 = new soundObject(300,100,80,1.35, "F");
   s4 = new soundObject(400,100,80,1.5, "G");
   s5 = new soundObject(500,100,80,1.67, "A");
   s6 = new soundObject(600,100,80,1.8, "B");
+}
+
+function setup() {
+  createCanvas(800,600);
 }
 
 function draw() {
