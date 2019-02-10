@@ -2,27 +2,30 @@
 
 A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web.
 
-## Note: the repository is under refactoring, its contents will consist of:
+## Installation & usage
+- clone or download this repository
+- download [Sublime Text](http://www.sublimetext.com/)
+- open sublime text, go to `tools/command palette`
+- find `Package Control: Install Package`
+- find `SublimeServer`, click to install
+- restart Sublime Text
+- open the downloaded repository *folder*, so you see all the files on the left bar
+- under tools/sublime server, press `start sublime server`
+- open a browser, and type in the address bar `localhost:8000` (8000 is the default port number)
+- you can browse within the example code now
+- if you edit your code, always save before checking it in the browser
 
-### Installation
-- notes on how you can edit, run and deploy your code
+
+## Folder Structure
 
 ### Basics
 - introduction to the environment, mostly based on [this and corresponding](https://p5js.org/get-started/) tutorials
 
-### Tools
-- [Sublime Text](http://www.sublimetext.com/) - the editor we use to edit code
-- [P5JS](http://p5js.org/) - the main js library we use 
-- [ml5js](https://ml5js.org/) - friendly machine learning for the web
-
 ### Topics
-- examples, related to different usage areas (UI, physics, sounds, etc)
+- examples, related to different usage areas (UI, physics, sounds, deploying, etc)
 
 ### Computer Vision
 - examples, based on different js based vision frameworks 
-
-### Publication
-- how deploy your code to the web, mobile, or other platforms
 
 
 (c) 2018 Agoston Nagy / gpl v3
