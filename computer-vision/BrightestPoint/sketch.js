@@ -2,6 +2,7 @@ var capture;
 var w = 640;
 var h = 480;
 
+
 function setup() {
     capture = createCapture({
         audio: false,

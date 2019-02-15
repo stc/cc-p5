@@ -1,20 +1,34 @@
-var capture;
-var w = 1280,
-    h = 720;
-
 var raster, param, pmat, resultMat, detector;
 
-function setup() {
-    pixelDensity(1); // this makes the internal p5 canvas smaller
-    capture = createCapture({
+function initAR() {
+	pixelDensity(1); // this makes the internal p5 canvas smaller
+
+    navigator.mediaDevices.enumerateDevices()
+        .then(function(devices) {
+          devices.forEach(function(device) {
+            console.log(device.kind + ": " + device.label +
+                " id = " + device.deviceId);
+          });
+        })
+        .catch(function(err) {
+          console.log(err.name + ": " + err.message);
+        });
+
+    var options = {
         audio: false,
-        video: {
-            width: w,
-            height: h
-        }
-    }, function() {
-        console.log('capture ready.')
-    });
+     video: {
+
+       optional: [
+           //{ sourceId: 'ab4f083ffeade5009095edfc4346acda656765946be768dd4a7cc89728b038c8' },
+           { width: w },
+           {height: h},
+           { frameRate: 60 }
+       ],
+     }
+   };
+
+    capture = createCapture(options);
+
     capture.elt.setAttribute('playsinline', '');
     createCanvas(w, h);
     capture.size(w, h);
@@ -29,13 +43,15 @@ function setup() {
     detector.setContinueMode(true);
 }
 
-function draw() {
-    image(capture, 0, 0, w, h);
-    canvas.changed = true;
-    var thresholdAmount = 128; //select('#thresholdAmount').value() * 255 / 100;
+function getMarkers() {
+	var results = [];
+	canvas.changed = true;
+    var thresholdAmount = 188; //select('#thresholdAmount').value() * 255 / 100;
     detected = detector.detectMarkerLite(raster, thresholdAmount);
-    select('#markersDetected').elt.innerText = detected;
     for (var i = 0; i < detected; i++) {
+    	let element = [];
+        var id = detector.getIdMarkerData(i);
+        var num = id._packet[1];
         // read data from the marker
         // var id = detector.getIdMarkerData(i);
 
@@ -64,18 +80,26 @@ function draw() {
         // convert that set of vertices from object space to screen space
         var w2 = width / 2,
             h2 = height / 2;
+        
         verts.forEach(function (v) {
             mat4.multiplyVec4(cm, v);
             v[0] = v[0] * w2 / v[3] + w2;
             v[1] = -v[1] * h2 / v[3] + h2;
         });
 
+        var center = [];
+        center[0] = (verts[0][0] + verts[1][0] + verts[2][0] + verts[3][0]) / 4;
+        center[1] = (verts[0][1] + verts[1][1] + verts[2][1] + verts[3][1]) / 4;
+
         noStroke();
-        fill(0, millis() % 255);
+        fill(255,0,0);
         beginShape();
         verts.forEach(function (v) {
             vertex(v[0], v[1]);
         });
         endShape();
+    	element.push(num, center[0], center[1]);
+        results.push(element);
     }
+    return results;
 }

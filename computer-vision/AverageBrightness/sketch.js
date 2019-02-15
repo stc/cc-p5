@@ -34,7 +34,10 @@ function draw() {
         }
         var n = w * h;
         var avg = int(total / n);
-        select('#average-value').elt.innerText = avg;
-        select('#average-color').elt.style.backgroundColor = 'rgb(' + avg + ',' + avg + ',' + avg + ')';
+        fill(0);
+        noStroke();
+        rect(0,0,50,25);
+        fill(255);
+        text(avg, 20, 20);
     }
 }
