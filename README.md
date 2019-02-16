@@ -25,9 +25,9 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 - examples, related to different usage areas (UI, physics, sounds, deploying, etc)
 
 ### Computer Vision
-- examples, based on different js based vision frameworks 
+- examples, using different js based vision frameworks 
 - these are some modified versions of Kyle McDonald's [javascript-computervision collection](https://github.com/kylemcdonald/cv-examples) 
 
 
-(c) 2018 Agoston Nagy / gpl v3
+(c) 2019 Agoston Nagy / gpl v3
 
