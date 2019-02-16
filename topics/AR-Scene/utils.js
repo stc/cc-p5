@@ -19,7 +19,7 @@ function initAR() {
      video: {
 
        optional: [
-           //{ sourceId: 'ab4f083ffeade5009095edfc4346acda656765946be768dd4a7cc89728b038c8' },
+           //{ sourceId: 'ab4f083ffeade5009095edfc4346acda656765946be768dd4a7cc89728b038c8' }, // uncomment this, set device id for 2nd cam
            { width: w },
            {height: h},
            { frameRate: 60 }
@@ -46,7 +46,7 @@ function initAR() {
 function getMarkers() {
 	var results = [];
 	canvas.changed = true;
-    var thresholdAmount = 188; //select('#thresholdAmount').value() * 255 / 100;
+    var thresholdAmount = 128; //select('#thresholdAmount').value() * 255 / 100;
     detected = detector.detectMarkerLite(raster, thresholdAmount);
     for (var i = 0; i < detected; i++) {
     	let element = [];
@@ -92,7 +92,7 @@ function getMarkers() {
         center[1] = (verts[0][1] + verts[1][1] + verts[2][1] + verts[3][1]) / 4;
 
         noStroke();
-        fill(255,0,0);
+        fill(255);
         beginShape();
         verts.forEach(function (v) {
             vertex(v[0], v[1]);
