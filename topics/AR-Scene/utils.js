@@ -46,7 +46,7 @@ function initAR() {
 function getMarkers() {
 	var results = [];
 	canvas.changed = true;
-    var thresholdAmount = 128; //select('#thresholdAmount').value() * 255 / 100;
+    var thresholdAmount = 40; //select('#thresholdAmount').value() * 255 / 100;
     detected = detector.detectMarkerLite(raster, thresholdAmount);
     for (var i = 0; i < detected; i++) {
     	let element = [];
@@ -98,7 +98,11 @@ function getMarkers() {
             vertex(v[0], v[1]);
         });
         endShape();
-    	element.push(num, center[0], center[1]);
+    	
+        element.push(num);
+        element.push(center[0]);
+        element.push(center[1]);
+
         results.push(element);
     }
     return results;

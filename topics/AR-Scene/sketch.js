@@ -1,41 +1,45 @@
+
 var detectedMarkers = [];
 
 var capture;
 var w = 640,
     h = 480;
 
-var r = 0;
-var g = 0;
-var b = 0;
-
 function setup() {
     initAR();
 }
 
 function draw() {
-    image(capture, 0, 0, w, h);
     detectedMarkers = getMarkers();
 
     if(detectedMarkers !== undefined) {
+        
         for(let i = 0; i< detectedMarkers.length; i++) {
             fill(255);
             text("found marker: " + detectedMarkers[i][0], 50,300 + i * 20);
 
-            if(detectedMarkers[i][0] == 0) {
-                r = map( detectedMarkers[i][1], 0, w, 0, 255 );
-            }
-
             if(detectedMarkers[i][0] == 1) {
-                g = map( detectedMarkers[i][1], 0, w, 0, 255 );
-            }
-
-            if(detectedMarkers[i][0] == 2) {
-                b = map( detectedMarkers[i][1], 0, w, 0, 255 );
+                background(196,236,255, mouseX);
             }
         }
     }
-    
+}
 
-    fill(int(r), g, b);
-    rect(0,0,100,100);
+function drawStars() {
+    for(var i = 0; i< planets.length; i++) {
+      fill(255,150);
+    noStroke();
+    ellipse(planets[i].x,planets[i].y,planets[i].z,planets[i].z);
+  }
+}
+
+function drawFigure() {
+    fill(110,141,155,40);
+  ellipse(width/2,height+width/2, width * 1.4, width * 1.4);
+
+  image(body,width/2,height-height/4, body.width/2,body.height/2);
+  
+  translate(width/2,height/2);
+  rotate( radians(sin(frameCount * 0.01) * 20) ); 
+  image(head,0,0,head.width/2,head.height/2);
 }
