@@ -5,11 +5,15 @@ var capture;
 var w = 640,
     h = 480;
 
+
+var globalAlpha;
+
 function setup() {
     initAR();
 }
 
 function draw() {
+    image(capture,0,0)
     detectedMarkers = getMarkers();
 
     if(detectedMarkers !== undefined) {
@@ -19,10 +23,16 @@ function draw() {
             text("found marker: " + detectedMarkers[i][0], 50,300 + i * 20);
 
             if(detectedMarkers[i][0] == 1) {
-                background(196,236,255, mouseX);
+                var distance = dist(detectedMarkers[i][1],detectedMarkers[i][2],width/2,height/2);
+                
+                globalAlpha = map(distance,0,width/2,255,0);
+                
+                background(196,236,255, globalAlpha);
+                fill(255,0,0, globalAlpha);
+                text("MY TEXT", 200, 200);
             }
         }
-    }
+    }  
 }
 
 function drawStars() {
