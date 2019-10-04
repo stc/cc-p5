@@ -1,7 +1,5 @@
 # Introduction to [p5js](https://p5js.org/) 
-Focusing on creative coding, algorithmic thinking and data manipulation
-
-A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web.
+A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web, focusing algorithmic thinking, data manipulation and computer vision
 
 ## Installation & usage
 - clone or download this repository
