@@ -28,6 +28,25 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 - examples, using different js based vision frameworks 
 - these are some modified versions of Kyle McDonald's [javascript-computervision collection](https://github.com/kylemcdonald/cv-examples) 
 
+## Other Resources
+
+- Books
+
+- *[Designing Programs](https://designingprograms.bitbucket.io/index.html)* by Mark Webster
+- *[Generative Design](http://www.generative-gestaltung.de/2/)* by Benedikt Groß
+- *[Getting Started with p5.js](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772)* by Lauren McCarthy
+- *[Computational Drawing Book](http://lostritto.com/book)* by Carl Lostritto
+- *[Generative Art](https://www.amazon.co.uk/Generative-Art-Matt-Pearson/dp/1935182625)* by Matt Pearson
+
+- Online 
+
+- [The Coding Train](https://thecodingtrain.com) videos with Daniel Shiffman
+- [Generative Artistry](https://generativeartistry.com/) — Tutorials & Podcast
+- [Anders Hoff](https://inconvergent.net/#writing) — Writing on Generative Art
+- [Tyler Hobbs](http://www.tylerlhobbs.com/writings) — Writing on Generative Art
+- [Matt Deslauriers](https://mattdesl.svbtle.com/) — Writing on Creative Coding & Generative Art
+- [Open Processing](https://www.openprocessing.org/browse/#)
+- [awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding) — A large list of resources
 
 (c) 2019 Agoston Nagy / gpl v3
 
