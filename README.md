@@ -55,7 +55,7 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 - [Tyler Hobbs](http://www.tylerlhobbs.com/writings) — Writing on Generative Art
 - [Matt Deslauriers](https://mattdesl.svbtle.com/) — Writing on Creative Coding & Generative Art
 - [Open Processing](https://www.openprocessing.org/browse/#)
-- [awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding) — A large list of resources
+- 🔥[awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding) — A large list of resources
 
 (c) 2019 Agoston Nagy / gpl v3
 
