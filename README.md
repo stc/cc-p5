@@ -21,7 +21,7 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 - introduction to the environment, mostly based on [this and corresponding](https://p5js.org/get-started/) tutorials
 
 ### Systems
-- computational thinkig, working with algorithms and conditionals
+- computational thinking, working with algorithms and conditionals
 
 ### Data
 - working with data: realtime, recorded (CSV), and API calls
