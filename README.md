@@ -21,8 +21,8 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 ### Basics
 - introduction to the environment, mostly based on [this and corresponding](https://p5js.org/get-started/) tutorials
 
-### Topics
-- examples, related to different usage areas (UI, physics, sounds, deploying, etc)
+### Misc
+- examples, related to different usage areas (deploying, platform specific stuff, etc)
 
 ### Computer Vision
 - examples, using different js based vision frameworks 
