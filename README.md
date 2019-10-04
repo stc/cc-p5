@@ -21,6 +21,12 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 ### Basics
 - introduction to the environment, mostly based on [this and corresponding](https://p5js.org/get-started/) tutorials
 
+### Systems
+- computational thinkig, working with algorithms and conditionals
+
+### Data
+- working with data: realtime, recorded (CSV), and API calls
+
 ### Misc
 - examples, related to different usage areas (deploying, platform specific stuff, etc)
 
