@@ -1,5 +1,5 @@
 # Introduction to [p5js](https://p5js.org/) 
-A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web, focusing algorithmic thinking, data manipulation and computer vision
+A growing collection of examples used to demonstrate basic concepts of creative coding on the modern web, focusing on algorithmic thinking, data manipulation and computer vision
 
 ## Installation & usage
 - clone or download this repository
@@ -26,12 +26,13 @@ A growing collection of examples used to demonstrate basic concepts of creative 
 ### Data
 - working with data: realtime, recorded (CSV), and API calls
 
-### Misc
-- examples, related to different usage areas (deploying, platform specific stuff, etc)
-
 ### Computer Vision
 - examples, using different js based vision frameworks 
-- these are some modified versions of Kyle McDonald's [javascript-computervision collection](https://github.com/kylemcdonald/cv-examples) 
+- these are some modified versions of Kyle McDonald's [javascript-computervision collection](https://github.com/kylemcdonald/cv-examples)
+- also, including handy machine learning code from [ml5js](https://ml5js.org/)
+
+### Misc
+- examples, related to different usage areas (deploying, platform specific stuff, etc)
 
 ### Libs
 - Javascript libraries, dependencies of the examples we are working with
