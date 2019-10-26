@@ -51,7 +51,6 @@ function draw() {
    }
 
    fill(0);
-
    var gridIndex = 0;
    for(var i=0; i<num; i++) {
       for(var j = 0; j<num; j++) {
@@ -66,5 +65,5 @@ function draw() {
         gridIndex++;
     }
   }
-  text("First 400 movies of IMDB database. \nColors are based on rating. Hover to see movie's title", 100, 40);
+  text("First " + num * num + " movies of IMDB database. \nColors are based on rating. Hover to see movie's title", 100, 40);
 }
